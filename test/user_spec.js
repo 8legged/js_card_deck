@@ -1,8 +1,8 @@
 /*jshint expr:true */
 var expect = require('chai').expect,
-User = require('../lib/user'),
-Deck = require('../lib/deck'),
-Card = require('../lib/card');
+    User = require('../lib/user').User,
+    Deck = require('../lib/deck').Deck,
+    Card = require('../lib/card').Card;
 
 describe('User gets card', function() {
   'use strict';
@@ -16,12 +16,3 @@ describe('User gets card', function() {
     expect(user.showCards().length).to.equal(1);
   });
 });
-
-
- // it('have a name', function() {
- //     expect(patron.name).to.equal('Ben Keller');
- //   });
-
- //   it('can check out books');
- //   it('can return books');
- // });

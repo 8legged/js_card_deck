@@ -1,7 +1,7 @@
 /*jshint expr:true */
 var expect = require('chai').expect,
-Deck = require('../lib/deck'),
-Card = require('../lib/card');
+      Deck = require('../lib/deck').Deck,
+      Card = require('../lib/card').Card;
 
 describe('Deck', function() {
   'use strict';
@@ -9,7 +9,7 @@ describe('Deck', function() {
   beforeEach(function() {
     deck = new Deck(Card);
   });
-  it('should know card count', function() {
+  it('should know its cards', function() {
     deck.add(new Card('10', 'Hearts'));
     expect(deck.includes('10', 'Hearts')).to.be.true;
   });
